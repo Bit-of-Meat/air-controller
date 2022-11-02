@@ -2,133 +2,133 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.Camera.MoveCamera.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.Camera.PlayerCamera.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.Camera.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerCrouchState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerIdleState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerRollState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerSlideState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerSprintState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.PlayerWalkState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.GroundSubstates.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.PlayerController.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.PlayerFallFromMap.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.PlayerInput.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerFallState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerGroundState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerJumpState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerStates.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerWalljumpState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.PlayerWallrunState.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.States.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/api/Player.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bit-of-meat.github.io/air-controller/manual/wind.html</loc>
-    <lastmod>2022-11-02T05:00:18+00:00</lastmod>
+    <lastmod>2022-11-02T05:43:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
