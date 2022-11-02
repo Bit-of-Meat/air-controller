@@ -1,0 +1,152 @@
+{
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace Global | Path of Hermes",
+    "keywords": "Namespace Global Classes LockCursor PlayerControls Structs PlayerControls.PlayerActions PlayerControls.UIActions Interfaces PlayerControls.IPlayerActions PlayerControls.IUIActions"
+  },
+  "api/Global.LockCursor.html": {
+    "href": "api/Global.LockCursor.html",
+    "title": "Class LockCursor | Path of Hermes",
+    "keywords": "Class LockCursor Inheritance Object LockCursor Namespace : Global Assembly : cs.temp.dll.dll Syntax public class LockCursor : MonoBehaviour"
+  },
+  "api/Global.PlayerControls.html": {
+    "href": "api/Global.PlayerControls.html",
+    "title": "Class PlayerControls | Path of Hermes",
+    "keywords": "Class PlayerControls Inheritance Object PlayerControls Implements IDisposable Namespace : Global Assembly : cs.temp.dll.dll Syntax public class PlayerControls : IInputActionCollection2 Constructors PlayerControls() Declaration public PlayerControls() Properties asset Declaration public InputActionAsset asset { get; } Property Value Type Description InputActionAsset bindingMask Declaration public InputBinding? bindingMask { get; set; } Property Value Type Description Nullable < InputBinding > bindings Declaration public IEnumerable<InputBinding> bindings { get; } Property Value Type Description IEnumerable < InputBinding > controlSchemes Declaration public ReadOnlyArray<InputControlScheme> controlSchemes { get; } Property Value Type Description ReadOnlyArray < InputControlScheme > devices Declaration public ReadOnlyArray<InputDevice>? devices { get; set; } Property Value Type Description Nullable < ReadOnlyArray < InputDevice >> GamepadScheme Declaration public InputControlScheme GamepadScheme { get; } Property Value Type Description InputControlScheme JoystickScheme Declaration public InputControlScheme JoystickScheme { get; } Property Value Type Description InputControlScheme KeyboardMouseScheme Declaration public InputControlScheme KeyboardMouseScheme { get; } Property Value Type Description InputControlScheme Player Declaration public PlayerControls.PlayerActions Player { get; } Property Value Type Description PlayerControls.PlayerActions TouchScheme Declaration public InputControlScheme TouchScheme { get; } Property Value Type Description InputControlScheme UI Declaration public PlayerControls.UIActions UI { get; } Property Value Type Description PlayerControls.UIActions XRScheme Declaration public InputControlScheme XRScheme { get; } Property Value Type Description InputControlScheme Methods Contains(InputAction) Declaration public bool Contains(InputAction action) Parameters Type Name Description InputAction action Returns Type Description Boolean Disable() Declaration public void Disable() Dispose() Declaration public void Dispose() Enable() Declaration public void Enable() FindAction(String, Boolean) Declaration public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false) Parameters Type Name Description String actionNameOrId Boolean throwIfNotFound Returns Type Description InputAction FindBinding(InputBinding, out InputAction) Declaration public int FindBinding(InputBinding bindingMask, out InputAction action) Parameters Type Name Description InputBinding bindingMask InputAction action Returns Type Description Int32 GetEnumerator() Declaration public IEnumerator<InputAction> GetEnumerator() Returns Type Description IEnumerator < InputAction > Implements IDisposable"
+  },
+  "api/Global.PlayerControls.IPlayerActions.html": {
+    "href": "api/Global.PlayerControls.IPlayerActions.html",
+    "title": "Interface PlayerControls.IPlayerActions | Path of Hermes",
+    "keywords": "Interface PlayerControls.IPlayerActions Namespace : Global Assembly : cs.temp.dll.dll Syntax public interface IPlayerActions Methods OnCrouch(InputAction.CallbackContext) Declaration void OnCrouch(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnFire(InputAction.CallbackContext) Declaration void OnFire(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnJump(InputAction.CallbackContext) Declaration void OnJump(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnLook(InputAction.CallbackContext) Declaration void OnLook(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnMovement(InputAction.CallbackContext) Declaration void OnMovement(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnSprint(InputAction.CallbackContext) Declaration void OnSprint(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context"
+  },
+  "api/Global.PlayerControls.IUIActions.html": {
+    "href": "api/Global.PlayerControls.IUIActions.html",
+    "title": "Interface PlayerControls.IUIActions | Path of Hermes",
+    "keywords": "Interface PlayerControls.IUIActions Namespace : Global Assembly : cs.temp.dll.dll Syntax public interface IUIActions Methods OnCancel(InputAction.CallbackContext) Declaration void OnCancel(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnClick(InputAction.CallbackContext) Declaration void OnClick(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnInGameMenu(InputAction.CallbackContext) Declaration void OnInGameMenu(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnMiddleClick(InputAction.CallbackContext) Declaration void OnMiddleClick(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnNavigate(InputAction.CallbackContext) Declaration void OnNavigate(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnPoint(InputAction.CallbackContext) Declaration void OnPoint(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnRightClick(InputAction.CallbackContext) Declaration void OnRightClick(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnScrollWheel(InputAction.CallbackContext) Declaration void OnScrollWheel(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnSubmit(InputAction.CallbackContext) Declaration void OnSubmit(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnTrackedDeviceOrientation(InputAction.CallbackContext) Declaration void OnTrackedDeviceOrientation(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context OnTrackedDevicePosition(InputAction.CallbackContext) Declaration void OnTrackedDevicePosition(InputAction.CallbackContext context) Parameters Type Name Description InputAction.CallbackContext context"
+  },
+  "api/Global.PlayerControls.PlayerActions.html": {
+    "href": "api/Global.PlayerControls.PlayerActions.html",
+    "title": "Struct PlayerControls.PlayerActions | Path of Hermes",
+    "keywords": "Struct PlayerControls.PlayerActions Namespace : Global Assembly : cs.temp.dll.dll Syntax public struct PlayerActions Constructors PlayerActions(PlayerControls) Declaration public PlayerActions(PlayerControls wrapper) Parameters Type Name Description PlayerControls wrapper Properties Crouch Declaration public readonly InputAction Crouch { get; } Property Value Type Description InputAction enabled Declaration public readonly bool enabled { get; } Property Value Type Description Boolean Fire Declaration public readonly InputAction Fire { get; } Property Value Type Description InputAction Jump Declaration public readonly InputAction Jump { get; } Property Value Type Description InputAction Look Declaration public readonly InputAction Look { get; } Property Value Type Description InputAction Movement Declaration public readonly InputAction Movement { get; } Property Value Type Description InputAction Sprint Declaration public readonly InputAction Sprint { get; } Property Value Type Description InputAction Methods Disable() Declaration public void Disable() Enable() Declaration public void Enable() Get() Declaration public InputActionMap Get() Returns Type Description InputActionMap SetCallbacks(PlayerControls.IPlayerActions) Declaration public void SetCallbacks(PlayerControls.IPlayerActions instance) Parameters Type Name Description PlayerControls.IPlayerActions instance Operators Implicit(PlayerControls.PlayerActions to InputActionMap) Declaration public static implicit operator InputActionMap(PlayerControls.PlayerActions set) Parameters Type Name Description PlayerControls.PlayerActions set Returns Type Description InputActionMap"
+  },
+  "api/Global.PlayerControls.UIActions.html": {
+    "href": "api/Global.PlayerControls.UIActions.html",
+    "title": "Struct PlayerControls.UIActions | Path of Hermes",
+    "keywords": "Struct PlayerControls.UIActions Namespace : Global Assembly : cs.temp.dll.dll Syntax public struct UIActions Constructors UIActions(PlayerControls) Declaration public UIActions(PlayerControls wrapper) Parameters Type Name Description PlayerControls wrapper Properties Cancel Declaration public readonly InputAction Cancel { get; } Property Value Type Description InputAction Click Declaration public readonly InputAction Click { get; } Property Value Type Description InputAction enabled Declaration public readonly bool enabled { get; } Property Value Type Description Boolean InGameMenu Declaration public readonly InputAction InGameMenu { get; } Property Value Type Description InputAction MiddleClick Declaration public readonly InputAction MiddleClick { get; } Property Value Type Description InputAction Navigate Declaration public readonly InputAction Navigate { get; } Property Value Type Description InputAction Point Declaration public readonly InputAction Point { get; } Property Value Type Description InputAction RightClick Declaration public readonly InputAction RightClick { get; } Property Value Type Description InputAction ScrollWheel Declaration public readonly InputAction ScrollWheel { get; } Property Value Type Description InputAction Submit Declaration public readonly InputAction Submit { get; } Property Value Type Description InputAction TrackedDeviceOrientation Declaration public readonly InputAction TrackedDeviceOrientation { get; } Property Value Type Description InputAction TrackedDevicePosition Declaration public readonly InputAction TrackedDevicePosition { get; } Property Value Type Description InputAction Methods Disable() Declaration public void Disable() Enable() Declaration public void Enable() Get() Declaration public InputActionMap Get() Returns Type Description InputActionMap SetCallbacks(PlayerControls.IUIActions) Declaration public void SetCallbacks(PlayerControls.IUIActions instance) Parameters Type Name Description PlayerControls.IUIActions instance Operators Implicit(PlayerControls.UIActions to InputActionMap) Declaration public static implicit operator InputActionMap(PlayerControls.UIActions set) Parameters Type Name Description PlayerControls.UIActions set Returns Type Description InputActionMap"
+  },
+  "api/Player.Camera.html": {
+    "href": "api/Player.Camera.html",
+    "title": "Namespace Player.Camera | Path of Hermes",
+    "keywords": "Namespace Player.Camera Classes MoveCamera PlayerCamera"
+  },
+  "api/Player.Camera.MoveCamera.html": {
+    "href": "api/Player.Camera.MoveCamera.html",
+    "title": "Class MoveCamera | Path of Hermes",
+    "keywords": "Class MoveCamera Inheritance Object MoveCamera Namespace : Player.Camera Assembly : cs.temp.dll.dll Syntax public class MoveCamera : MonoBehaviour"
+  },
+  "api/Player.Camera.PlayerCamera.html": {
+    "href": "api/Player.Camera.PlayerCamera.html",
+    "title": "Class PlayerCamera | Path of Hermes",
+    "keywords": "Class PlayerCamera Inheritance Object PlayerCamera Namespace : Player.Camera Assembly : cs.temp.dll.dll Syntax public class PlayerCamera : MonoBehaviour Methods Update() Declaration public void Update()"
+  },
+  "api/Player.GroundSubstates.html": {
+    "href": "api/Player.GroundSubstates.html",
+    "title": "Namespace Player.GroundSubstates | Path of Hermes",
+    "keywords": "Namespace Player.GroundSubstates Classes PlayerCrouchState PlayerIdleState PlayerRollState PlayerSlideState PlayerSprintState PlayerWalkState"
+  },
+  "api/Player.GroundSubstates.PlayerCrouchState.html": {
+    "href": "api/Player.GroundSubstates.PlayerCrouchState.html",
+    "title": "Class PlayerCrouchState | Path of Hermes",
+    "keywords": "Class PlayerCrouchState Inheritance Object PlayerCrouchState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerCrouchState : StateBase<PlayerStates> Constructors PlayerCrouchState(PlayerController) Declaration public PlayerCrouchState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter() OnExit() Declaration public override void OnExit()"
+  },
+  "api/Player.GroundSubstates.PlayerIdleState.html": {
+    "href": "api/Player.GroundSubstates.PlayerIdleState.html",
+    "title": "Class PlayerIdleState | Path of Hermes",
+    "keywords": "Class PlayerIdleState Inheritance Object PlayerIdleState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerIdleState : StateBase<PlayerStates> Constructors PlayerIdleState(PlayerController) Declaration public PlayerIdleState(PlayerController controller) Parameters Type Name Description PlayerController controller"
+  },
+  "api/Player.GroundSubstates.PlayerRollState.html": {
+    "href": "api/Player.GroundSubstates.PlayerRollState.html",
+    "title": "Class PlayerRollState | Path of Hermes",
+    "keywords": "Class PlayerRollState Inheritance Object PlayerRollState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerRollState : StateBase<PlayerStates> Constructors PlayerRollState(PlayerController) Declaration public PlayerRollState(PlayerController controller) Parameters Type Name Description PlayerController controller"
+  },
+  "api/Player.GroundSubstates.PlayerSlideState.html": {
+    "href": "api/Player.GroundSubstates.PlayerSlideState.html",
+    "title": "Class PlayerSlideState | Path of Hermes",
+    "keywords": "Class PlayerSlideState Inheritance Object PlayerSlideState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerSlideState : StateBase<PlayerStates> Constructors PlayerSlideState(PlayerController) Declaration public PlayerSlideState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter() OnExit() Declaration public override void OnExit() OnLogic() Declaration public override void OnLogic()"
+  },
+  "api/Player.GroundSubstates.PlayerSprintState.html": {
+    "href": "api/Player.GroundSubstates.PlayerSprintState.html",
+    "title": "Class PlayerSprintState | Path of Hermes",
+    "keywords": "Class PlayerSprintState Inheritance Object PlayerSprintState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerSprintState : StateBase<PlayerStates> Constructors PlayerSprintState(PlayerController) Declaration public PlayerSprintState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter()"
+  },
+  "api/Player.GroundSubstates.PlayerWalkState.html": {
+    "href": "api/Player.GroundSubstates.PlayerWalkState.html",
+    "title": "Class PlayerWalkState | Path of Hermes",
+    "keywords": "Class PlayerWalkState Inheritance Object PlayerWalkState Namespace : Player.GroundSubstates Assembly : cs.temp.dll.dll Syntax public class PlayerWalkState : StateBase<PlayerStates> Constructors PlayerWalkState(PlayerController) Declaration public PlayerWalkState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter()"
+  },
+  "api/Player.html": {
+    "href": "api/Player.html",
+    "title": "Namespace Player | Path of Hermes",
+    "keywords": "Namespace Player Classes PlayerController PlayerFallFromMap Logic for teleporting player to point when he fall from map PlayerInput"
+  },
+  "api/Player.PlayerController.html": {
+    "href": "api/Player.PlayerController.html",
+    "title": "Class PlayerController | Path of Hermes",
+    "keywords": "Class PlayerController Inheritance Object PlayerController Namespace : Player Assembly : cs.temp.dll.dll Syntax public class PlayerController : MonoBehaviour Properties AirMultiplier Declaration public float AirMultiplier { get; } Property Value Type Description Single Crouching Declaration public bool Crouching { get; set; } Property Value Type Description Boolean CrouchSpeed Declaration public float CrouchSpeed { get; } Property Value Type Description Single CrouchYScale Declaration public float CrouchYScale { get; } Property Value Type Description Single DesiredMoveSpeed Declaration public float DesiredMoveSpeed { get; set; } Property Value Type Description Single ExitingSlope Declaration public bool ExitingSlope { get; set; } Property Value Type Description Boolean GroundDrag Declaration public float GroundDrag { get; } Property Value Type Description Single GroundLayerMask Declaration public LayerMask GroundLayerMask { get; } Property Value Type Description LayerMask Input Declaration public PlayerInput Input { get; } Property Value Type Description PlayerInput IsAbove Declaration public bool IsAbove { get; } Property Value Type Description Boolean IsGrounded Declaration public bool IsGrounded { get; } Property Value Type Description Boolean IsLeftWall Declaration public bool IsLeftWall { get; } Property Value Type Description Boolean IsRightWall Declaration public bool IsRightWall { get; } Property Value Type Description Boolean JumpCooldown Declaration public float JumpCooldown { get; } Property Value Type Description Single JumpHeight Declaration public float JumpHeight { get; } Property Value Type Description Single LastDesiredMoveSpeed Declaration public float LastDesiredMoveSpeed { get; set; } Property Value Type Description Single MoveSpeed Declaration public float MoveSpeed { get; set; } Property Value Type Description Single Orientation Declaration public Transform Orientation { get; } Property Value Type Description Transform PlayerHeight Declaration public float PlayerHeight { get; } Property Value Type Description Single ReadyToJump Declaration public bool ReadyToJump { get; set; } Property Value Type Description Boolean RigidBody Declaration public Rigidbody RigidBody { get; } Property Value Type Description Rigidbody SlideDrag Declaration public float SlideDrag { get; } Property Value Type Description Single SlideSpeed Declaration public float SlideSpeed { get; } Property Value Type Description Single Speed Declaration public float Speed { get; } Property Value Type Description Single SprintSpeed Declaration public float SprintSpeed { get; } Property Value Type Description Single StartWallrunForce Declaration public float StartWallrunForce { get; } Property Value Type Description Single StartYScale Declaration public float StartYScale { get; } Property Value Type Description Single WalkSpeed Declaration public float WalkSpeed { get; } Property Value Type Description Single WallrunDrag Declaration public float WallrunDrag { get; } Property Value Type Description Single WallrunJumpForce Declaration public float WallrunJumpForce { get; } Property Value Type Description Single WallrunTick Declaration public float WallrunTick { get; } Property Value Type Description Single Methods DisplaySpeed() Declaration public void DisplaySpeed() FixedUpdate() Declaration public void FixedUpdate() Update() Declaration public void Update()"
+  },
+  "api/Player.PlayerFallFromMap.html": {
+    "href": "api/Player.PlayerFallFromMap.html",
+    "title": "Class PlayerFallFromMap | Path of Hermes",
+    "keywords": "Class PlayerFallFromMap Logic for teleporting player to point when he fall from map Inheritance Object PlayerFallFromMap Namespace : Player Assembly : cs.temp.dll.dll Syntax public class PlayerFallFromMap : MonoBehaviour"
+  },
+  "api/Player.PlayerInput.html": {
+    "href": "api/Player.PlayerInput.html",
+    "title": "Class PlayerInput | Path of Hermes",
+    "keywords": "Class PlayerInput Inheritance Object PlayerInput Namespace : Player Assembly : cs.temp.dll.dll Syntax public class PlayerInput : MonoBehaviour Properties IsCrouch Returns true if jump key is pressed Declaration public bool IsCrouch { get; } Property Value Type Description Boolean Boolean IsFire Returns true if fire key is pressed Declaration public bool IsFire { get; } Property Value Type Description Boolean Boolean IsJump Returns true if jump key is pressed Declaration public bool IsJump { get; } Property Value Type Description Boolean Boolean IsSprint Returns true if sprint key is pressed Declaration public bool IsSprint { get; } Property Value Type Description Boolean Boolean LookDirection Returns Mouse delta, Gamepad right stick, etc. Declaration public Vector2 LookDirection { get; } Property Value Type Description Vector2 Vector from [-1,-1] to [1,1] MovementDirection Returns WASD, Gamepad left stick, etc. Declaration public Vector2 MovementDirection { get; } Property Value Type Description Vector2 Vector from [-1,-1] to [1,1]"
+  },
+  "api/Player.States.html": {
+    "href": "api/Player.States.html",
+    "title": "Namespace Player.States | Path of Hermes",
+    "keywords": "Namespace Player.States Classes PlayerFallState PlayerGroundState PlayerJumpState PlayerWalljumpState PlayerWallrunState Enums PlayerStates All PlayerStates"
+  },
+  "api/Player.States.PlayerFallState.html": {
+    "href": "api/Player.States.PlayerFallState.html",
+    "title": "Class PlayerFallState | Path of Hermes",
+    "keywords": "Class PlayerFallState Inheritance Object PlayerFallState Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public class PlayerFallState : StateBase<PlayerStates> Constructors PlayerFallState(PlayerController) Declaration public PlayerFallState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter() OnLogic() Declaration public override void OnLogic()"
+  },
+  "api/Player.States.PlayerGroundState.html": {
+    "href": "api/Player.States.PlayerGroundState.html",
+    "title": "Class PlayerGroundState | Path of Hermes",
+    "keywords": "Class PlayerGroundState Inheritance Object PlayerGroundState Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public class PlayerGroundState : StateBase<PlayerStates> Constructors PlayerGroundState(PlayerController) Declaration public PlayerGroundState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods Init() Declaration public override void Init() OnEnter() Declaration public override void OnEnter() OnLogic() Declaration public override void OnLogic()"
+  },
+  "api/Player.States.PlayerJumpState.html": {
+    "href": "api/Player.States.PlayerJumpState.html",
+    "title": "Class PlayerJumpState | Path of Hermes",
+    "keywords": "Class PlayerJumpState Inheritance Object PlayerJumpState Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public class PlayerJumpState : StateBase<PlayerStates> Constructors PlayerJumpState(PlayerController) Declaration public PlayerJumpState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter() OnLogic() Declaration public override void OnLogic()"
+  },
+  "api/Player.States.PlayerStates.html": {
+    "href": "api/Player.States.PlayerStates.html",
+    "title": "Enum PlayerStates | Path of Hermes",
+    "keywords": "Enum PlayerStates All PlayerStates Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public enum PlayerStates Fields Name Description Crouch Only runs when the player is on the ground and the crouch button is pressed Fall Fired when the player has left the surface or the jump state has ended Ground Runs when the player is on the ground Hook All PlayerStates Idle Runs when the player is on the ground and not moving Jump Executed when the player presses the jump button Run Fired when the player is in walking state and the run button is pressed Slide Substate of Ground Performed while the player makes a tackle Swing All PlayerStates Walk Executed when the player presses the WASD buttons Walljump Runs when the player is in the \"Wallrun\" state Wallrun Performed while running on the wall"
+  },
+  "api/Player.States.PlayerWalljumpState.html": {
+    "href": "api/Player.States.PlayerWalljumpState.html",
+    "title": "Class PlayerWalljumpState | Path of Hermes",
+    "keywords": "Class PlayerWalljumpState Inheritance Object PlayerWalljumpState Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public class PlayerWalljumpState : StateBase<PlayerStates> Constructors PlayerWalljumpState(PlayerController) Declaration public PlayerWalljumpState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter()"
+  },
+  "api/Player.States.PlayerWallrunState.html": {
+    "href": "api/Player.States.PlayerWallrunState.html",
+    "title": "Class PlayerWallrunState | Path of Hermes",
+    "keywords": "Class PlayerWallrunState Inheritance Object PlayerWallrunState Namespace : Player.States Assembly : cs.temp.dll.dll Syntax public class PlayerWallrunState : StateBase<PlayerStates> Constructors PlayerWallrunState(PlayerController) Declaration public PlayerWallrunState(PlayerController controller) Parameters Type Name Description PlayerController controller Methods OnEnter() Declaration public override void OnEnter() OnLogic() Declaration public override void OnLogic()"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Path of Hermes | Path of Hermes",
+    "keywords": "Path of Hermes Russian version Getting started ☄️ Unity 2021.3.5f1 [ Download ] Project structure 📦Path-of-Hermes ├──📂Audio audio mixers │ ├──📂Music music │ └──📂Sounds sounds (wind, footsteps) │ ├──📂Graphics graphics content folder │ ├──📂Materials materials without models │ ├──📂Models models and materials for them (houses) │ ├──📂Particles particles include models and sprites for them │ ├──📂Shaders shaders │ ├──📂Sprites sprites (GUI, HUD) │ └──📂Terrain terrain data │ ├──📂Packages third-party libraries, assets (TextMeshPro, Stylezed Water etc.) ├──📂Prefabs prefabs (.prefab files) ├──📂Scenes scenes (menu, game) ├──📂Scripts source code (.cs files) └──📂Settings settings files (URP settings, Input system etc.) Credits 💖 Made by Bit of Meat team."
+  },
+  "manual/wind.html": {
+    "href": "manual/wind.html",
+    "title": "Wind Component [source code] | Path of Hermes",
+    "keywords": "Wind Component [ source code ] Russian Adding to the scene To start you need to create empty GameObject. Now let's add to it Wind component. Wind settings Variables Strength - wind force (default: 20 meters) WindLayerMask - layer mask of objects to which the wind force will be applied (default: nothing - no layer specified) MaximumOfDetectionObjects - is responsible for the maximum number of objects to which the force of the wind can be applied (default: 10 objects). Performance depends on this parameter, because it sets the size of the created heap for storing colliders in memory (more about this: Performance optimization tips: Physics in Unity | Tutorial ) To change position, size and direction of the wind force use transform . red arrow points wind direction (by default points up)."
+  }
+}
