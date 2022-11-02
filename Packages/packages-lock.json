@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.bit-of-meat.air-controller": {
+      "version": "file:com.bit-of-meat.air-controller",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.textmeshpro": "3.0.6",
+        "com.inspiaaa.unityhfsm": "1.9.0"
+      }
+    },
     "com.inspiaaa.unityhfsm": {
       "version": "https://github.com/Inspiaaa/UnityHFSM.git#upm",
       "depth": 0,

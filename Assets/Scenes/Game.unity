@@ -606,8 +606,8 @@ GameObject:
   m_Component:
   - component: {fileID: 203568528}
   - component: {fileID: 203568527}
-  - component: {fileID: 203568526}
-  - component: {fileID: 203568525}
+  - component: {fileID: 203568530}
+  - component: {fileID: 203568529}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -615,52 +615,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &203568525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203568523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929575ccff20dc14ca04a99aeec8f082, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wallrunJumpForce: 0
-  _input: {fileID: 203568526}
-  _rigidbody: {fileID: 203568527}
-  _walkSpeed: 5
-  _sprintSpeed: 7
-  _slideSpeed: 10
-  _slideDrag: 0
-  _groundDrag: 8
-  _jumpHeight: 2
-  _jumpCooldown: 0.25
-  _airMultiplier: 0.4
-  _crouchSpeed: 3.5
-  _crouchYScale: 0.5
-  _playerHeight: 2
-  _groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 72
-  _wallrunDrag: 0
-  _startWallrunForce: 2
-  _wallrunTick: 1
-  _orientation: {fileID: 1569157540}
-  speed: {fileID: 0}
---- !u!114 &203568526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203568523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39dcdb1590dc63f4bbef8c2905e316dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &203568527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -695,13 +649,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203568529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203568523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967c197dd5bf64a4fb993901dbc84dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wallrunJumpForce: 0
+  _input: {fileID: 203568530}
+  _rigidbody: {fileID: 203568527}
+  _walkSpeed: 5
+  _sprintSpeed: 7
+  _slideSpeed: 10
+  _slideDrag: 0
+  _groundDrag: 8
+  _jumpHeight: 2
+  _jumpCooldown: 0.25
+  _airMultiplier: 0.4
+  _crouchSpeed: 3.5
+  _crouchYScale: 0.5
+  _playerHeight: 2
+  _groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  _wallrunDrag: 0
+  _startWallrunForce: 2
+  _wallrunTick: 1
+  _orientation: {fileID: 1569157540}
+  speed: {fileID: 0}
+--- !u!114 &203568530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203568523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0788733a5d09545854f4260c7c9995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &362659053
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh34164
+  m_Name: pb_Mesh51918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1096,8 +1096,8 @@ GameObject:
   - component: {fileID: 1678905956}
   - component: {fileID: 1678905961}
   - component: {fileID: 1678905960}
-  - component: {fileID: 1678905959}
   - component: {fileID: 1678905958}
+  - component: {fileID: 1678905962}
   m_Layer: 3
   m_Name: PlayerCam
   m_TagString: MainCamera
@@ -1154,20 +1154,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &1678905959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678905955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0905d6a4c62f14c4095d73813e9389b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _input: {fileID: 203568526}
-  _orientation: {fileID: 1569157540}
 --- !u!81 &1678905960
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1219,6 +1205,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1678905962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678905955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7b7eb499c47ca47b6e8dddbaba0134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _input: {fileID: 203568530}
+  _orientation: {fileID: 1569157540}
 --- !u!1 &2130172747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,8 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130172749}
-  - component: {fileID: 2130172748}
-  - component: {fileID: 2130172750}
+  - component: {fileID: 2130172751}
   m_Layer: 3
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -1237,19 +1236,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2130172748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130172747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d636247daadbd7140bcbd2a88125cb4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 643655261}
 --- !u!4 &2130172749
 Transform:
   m_ObjectHideFlags: 0
@@ -1266,7 +1252,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2130172750
+--- !u!114 &2130172751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1275,6 +1261,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130172747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c11eff7082094f419407f7f92e1a0d8, type: 3}
+  m_Script: {fileID: 11500000, guid: b5cba6c67cf28b04798220b4c307e163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPosition: {fileID: 643655261}
