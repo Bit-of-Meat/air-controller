@@ -3,7 +3,7 @@ name: Documentation
 on:
   push:
     branches:
-      - main
+      - upm
 
 jobs:
   # Build the documentation
