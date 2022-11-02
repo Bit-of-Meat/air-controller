@@ -2,15 +2,15 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://Bit-of-Meat.github.io/Path-of-Hermes/",
+        "baseUrl": "https://Bit-of-Meat.github.io/air-controller/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://Bit-of-Meat.github.io/Path-of-Hermes/",
+    "baseUrl": "https://Bit-of-Meat.github.io/air-controller/",
     "changefreq": "weekly"
   },
   "homepages": [],
-  "source_base_path": "D:/a/air-controller/air-controller/Documentation",
+  "source_base_path": "D:/a/air-controller/air-controller/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -21,90 +21,6 @@
         }
       },
       "is_incremental": false
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.LockCursor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.LockCursor.html",
-          "hash": "+aOEBRg6gkJbXMFAT3bjTQeDb4ypcdgaETG9KEVxE4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerControls.IPlayerActions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.PlayerControls.IPlayerActions.html",
-          "hash": "U7b/vGYlB4nZnvYa0AeqLQihIuVP86mTbt0IjUox30s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerControls.IUIActions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.PlayerControls.IUIActions.html",
-          "hash": "IUyosRxa+75ui1Wa9mmuFwlEKG49tgFsysOXB3SB7mQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerControls.PlayerActions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.PlayerControls.PlayerActions.html",
-          "hash": "vFVHZ7bHIfLpTR7mqcDLmSNZt6rb4dKWIsTAyVTIlGA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerControls.UIActions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.PlayerControls.UIActions.html",
-          "hash": "Y+yCMG7d/sSQ3Khcnu3UVr+o3Zt/b2CHlJiKyxiV8Ds="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerControls.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.PlayerControls.html",
-          "hash": "ttAxWWdsWkyY3zEJZtsJVzZnxl2zp6sknS4m7af4Edk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.html",
-          "hash": "lUDBbGYx4RU9fqihphfvaLYofENgs6HxI63WT0k4X40="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -364,22 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "EYCtUGvWdN3mTjkPH/QhhKhjfkwRvnajUXY4jpT+slg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
-      "output": {
-        ".html": {
-          "relative_path": "index.html",
-          "hash": "CCHIcHI+ytSrYUBiWVEvQSnLEwGy9MNRn8h95Ysajvo="
+          "hash": "JjC9hALA6KwsIHWULVcMUQkkJiYX93dryorsieuiaNM="
         }
       },
       "is_incremental": false,
@@ -406,7 +307,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/wind.html",
-          "hash": "ogSaHoQcId2HlNBwChos7s77UxSBY3xAIq7hwe+JY30="
+          "hash": "6k8yrJtlv2tZ4PDiUkIj/+FNZFCIbp79S+h6KJYiVII="
         }
       },
       "is_incremental": false,
@@ -418,7 +319,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Fj5xTTWJo6+wl+CCdRriQdQ8ejpw5/nwxqoKG9Rc1Bw="
+          "hash": "TIhZ8IFF0HSOKfvJN4MVoQZN3AwF76XXJyqDu9cHI/g="
         }
       },
       "is_incremental": false,
@@ -439,13 +340,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 1,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 28,
+          "total_file_count": 21,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
