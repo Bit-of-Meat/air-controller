@@ -2,7 +2,7 @@
     "name": "com.bit-of-meat.air-controller",
     "displayName": "Air Controller",
     "description": "A simple modular first person controller",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "unity": "2021.3",
     "license": "MIT",
     "keywords": ["controller", "modular", "state-machine"],
