@@ -6,9 +6,6 @@
     "unity": "2021.3",
     "license": "MIT",
     "keywords": ["controller", "modular", "state-machine"],
-    "dependencies": {
-        "com.unity.inputsystem": "1.4.3"
-      },
     "documentationUrl": "https://bit-of-meat.github.io/air-controller/",
     "author": {
       "name": "Bit of Meat",
