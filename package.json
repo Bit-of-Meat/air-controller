@@ -1,0 +1,19 @@
+{
+    "name": "com.bit-of-meat.air-controller",
+    "displayName": "Air Controller",
+    "description": "A simple modular first person controller",
+    "version": "0.0.1",
+    "unity": "2021.3",
+    "license": "MIT",
+    "keywords": ["controller", "modular", "state-machine"],
+    "dependencies": {
+        "com.inspiaaa.unityhfsm": "1.9.0",
+        "com.unity.inputsystem": "1.4.3"
+      },
+    "documentationUrl": "https://bit-of-meat.github.io/air-controller/",
+    "author": {
+      "name": "Bit of Meat",
+      "url": "https://github.com/Bit-of-Meat"
+    }
+  }
+  
