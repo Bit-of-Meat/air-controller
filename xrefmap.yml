@@ -320,19 +320,6 @@ references:
   isSpec: "True"
   fullName: Player.PlayerController.DesiredMoveSpeed
   nameWithType: PlayerController.DesiredMoveSpeed
-- uid: Player.PlayerController.DisplaySpeed
-  name: DisplaySpeed()
-  href: api/Player.PlayerController.html#Player_PlayerController_DisplaySpeed
-  commentId: M:Player.PlayerController.DisplaySpeed
-  fullName: Player.PlayerController.DisplaySpeed()
-  nameWithType: PlayerController.DisplaySpeed()
-- uid: Player.PlayerController.DisplaySpeed*
-  name: DisplaySpeed
-  href: api/Player.PlayerController.html#Player_PlayerController_DisplaySpeed_
-  commentId: Overload:Player.PlayerController.DisplaySpeed
-  isSpec: "True"
-  fullName: Player.PlayerController.DisplaySpeed
-  nameWithType: PlayerController.DisplaySpeed
 - uid: Player.PlayerController.ExitingSlope
   name: ExitingSlope
   href: api/Player.PlayerController.html#Player_PlayerController_ExitingSlope
