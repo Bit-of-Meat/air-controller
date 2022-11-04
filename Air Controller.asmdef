@@ -2,9 +2,8 @@
     "name": "AirController",
     "rootNamespace": "",
     "references": [
-        "GUID:810f54f43f696374fb3b49d45b461274",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:810f54f43f696374fb3b49d45b461274"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

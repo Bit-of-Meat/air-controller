@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using FSM;
-using TMPro;
+
 using Player.States;
 
 namespace Player {
@@ -88,7 +88,6 @@ namespace Player {
         [SerializeField] private float _wallrunTick;
         
         [SerializeField] private Transform _orientation;
-        [SerializeField] private TextMeshProUGUI speed;
 
 
         private Coroutine smooth = null;
@@ -127,8 +126,6 @@ namespace Player {
 
             _isLeftWall = Physics.Raycast(transform.position, -_orientation.right, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
             _isRightWall = Physics.Raycast(transform.position, _orientation.right, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
-
-            DisplaySpeed();
         }
 
         public void FixedUpdate() {
@@ -146,9 +143,5 @@ namespace Player {
             Gizmos.color = Color.black;
             Gizmos.DrawCube(transform.position + Vector3.down * (PlayerHeight * 0.5f), new Vector3(0.5f, 0.05f, 0.5f));
         }
-
-        public void DisplaySpeed() {
-            //speed.text = "Speed: " + Mathf.Round(Speed) + " | " + _stateMachine.ActiveStateName.ToString();
-        }  
     }
 }
