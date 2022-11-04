@@ -1,8 +1,8 @@
 {
   "name": "com.bit-of-meat.air-controller",
   "displayName": "Air Controller",
-  "description": "A simple modular first person controller",
-  "version": "0.0.3",
+  "description": "Simple controller\n         ______     ____           _____\r\n   ___|\\\u2007\u202f\u202f\u202f\u202f\u202f\u202f\\\u202f\u202f|\u2007\u2007\u202f\u202f|  ____|\\\u2007\u2007\u202f\u202f\\\r\n /\u2007\u2007\u202f/\u202f  \\\u2007\u202f\u202f\u202f\u202f\u202f\\|\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f|  \\\u2007\u2007\u202f\u202f\\\r\n|\u2007\u2007\u202f\u202f|\u2007\u202f|\u2007\u202f\u202f\u202f\u202f\u202f||\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f|  |\u2007\u2007\u202f\u202f|\n|\u2007\u2007\u202f\u202f|__|\u2007\u202f\u202f\u202f\u202f\u202f||\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f|/_____/\r\n|       .--.       ||\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f|\\\u2007\u2007\u202f\u202f\\\r\n|\u2007\u2007\u202f\u202f|    |\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f| |\u2007\u2007\u202f\u202f|\r\n|____|    |____||____||____| |____|\r\n|\u2007\u2007\u202f\u202f|    |\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f||\u2007\u2007\u202f\u202f| |\u2007\u2007\u202f\u202f|\r \n|____|    |____||____||____| |____|",
+  "version": "0.0.4",
   "unity": "2021.3",
   "license": "MIT",
   "keywords": [
