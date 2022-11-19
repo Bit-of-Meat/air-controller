@@ -55,6 +55,7 @@
         "Logs/":true,
         "builds/":true,
         "Builds/":true,
+        "userSettings/":true,
         "UserSettings/":true
     }
 }
