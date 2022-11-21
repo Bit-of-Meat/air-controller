@@ -41,7 +41,6 @@ namespace Player.States {
 
         public override void OnEnter() {
             _controller.RigidBody.drag = _controller.GroundDrag;
-            _stateMachine.OnEnter();
         }
 
         public override void OnLogic() {

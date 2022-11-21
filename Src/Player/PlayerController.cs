@@ -37,14 +37,15 @@ namespace Player {
         public bool ExitingSlope { get; set; }
         // Wallrun
         public float WallrunDrag { get => _wallrunDrag; }
-        public float StartWallrunForce { get => _startWallrunForce; }
-        public float WallrunTick { get => _wallrunTick; }
+        public float WallrunSpeed { get => _wallrunSpeed; }
 
         public float AirMultiplier { get => _airMultiplier; }
 
         public Transform Orientation { get => _orientation; }
 
         public float Speed { get => new Vector3(RigidBody.velocity.x, 0f, RigidBody.velocity.z).magnitude; }
+        
+        public RaycastHit _leftHit, _rightHit;
 
         private StateMachine<PlayerStates> _stateMachine;
         private bool _isGrounded;
@@ -84,9 +85,11 @@ namespace Player {
 
         [Header("Easy Wallrun v0.1")]
         [SerializeField] private float _wallrunDrag;
-        [SerializeField] private float _startWallrunForce;
-        [SerializeField] private float _wallrunTick;
-        
+        [SerializeField] private float _wallrunSpeed;
+        [SerializeField] private float _startWallrunForce;        
+        public float StartWallrunForce { get => _startWallrunForce; }
+        [SerializeField] private float _wallrunTick;        
+        public float WallrunTick { get => _wallrunTick; }
         [SerializeField] private Transform _orientation;
 
 
@@ -111,9 +114,10 @@ namespace Player {
             _stateMachine.AddTransition(PlayerStates.Jump, PlayerStates.Fall, (_) => ReadyToJump);
             
             _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Ground, (_) => IsGrounded);
-            _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Wallrun, (_) => IsLeftWall || IsRightWall);
+            _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Wallrun, (_) => _input.MovementDirection.y > 0 && _input.IsJump && (IsLeftWall || IsRightWall) && Speed >= WalkSpeed);
 
-            //.AddTransition(PlayerStates.Wallrun, PlayerStates.Fall, (_) => ...)
+            _stateMachine.AddTransition(PlayerStates.Wallrun, PlayerStates.Walljump, (_) => !_input.IsJump && ReadyToJump);
+            _stateMachine.AddTransition(PlayerStates.Walljump, PlayerStates.Fall, (_) => ReadyToJump);
             _stateMachine.AddTransition(PlayerStates.Wallrun, PlayerStates.Ground, (_) => IsGrounded);
 
             _stateMachine.SetStartState(PlayerStates.Ground);
@@ -124,8 +128,10 @@ namespace Player {
             _isGrounded = Physics.BoxCast(transform.position, new Vector3(0.5f, 0.05f, 0.5f), Vector3.down, Quaternion.identity, PlayerHeight * 0.5f, GroundLayerMask);
             _isAbove = Physics.Raycast(transform.position, Vector3.up, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
 
-            _isLeftWall = Physics.Raycast(transform.position, -_orientation.right, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
-            _isRightWall = Physics.Raycast(transform.position, _orientation.right, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
+            _isLeftWall = Physics.Raycast(transform.position, -_orientation.right, out _leftHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
+            _isRightWall = Physics.Raycast(transform.position, _orientation.right, out _rightHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
+
+            //Debug.Log(Speed);
         }
 
         public void FixedUpdate() {
