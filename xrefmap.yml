@@ -255,6 +255,18 @@ references:
   commentId: T:Player.PlayerController
   fullName: Player.PlayerController
   nameWithType: PlayerController
+- uid: Player.PlayerController._leftHit
+  name: _leftHit
+  href: api/Player.PlayerController.html#Player_PlayerController__leftHit
+  commentId: F:Player.PlayerController._leftHit
+  fullName: Player.PlayerController._leftHit
+  nameWithType: PlayerController._leftHit
+- uid: Player.PlayerController._rightHit
+  name: _rightHit
+  href: api/Player.PlayerController.html#Player_PlayerController__rightHit
+  commentId: F:Player.PlayerController._rightHit
+  fullName: Player.PlayerController._rightHit
+  nameWithType: PlayerController._rightHit
 - uid: Player.PlayerController.AirMultiplier
   name: AirMultiplier
   href: api/Player.PlayerController.html#Player_PlayerController_AirMultiplier
@@ -671,6 +683,19 @@ references:
   isSpec: "True"
   fullName: Player.PlayerController.WallrunJumpForce
   nameWithType: PlayerController.WallrunJumpForce
+- uid: Player.PlayerController.WallrunSpeed
+  name: WallrunSpeed
+  href: api/Player.PlayerController.html#Player_PlayerController_WallrunSpeed
+  commentId: P:Player.PlayerController.WallrunSpeed
+  fullName: Player.PlayerController.WallrunSpeed
+  nameWithType: PlayerController.WallrunSpeed
+- uid: Player.PlayerController.WallrunSpeed*
+  name: WallrunSpeed
+  href: api/Player.PlayerController.html#Player_PlayerController_WallrunSpeed_
+  commentId: Overload:Player.PlayerController.WallrunSpeed
+  isSpec: "True"
+  fullName: Player.PlayerController.WallrunSpeed
+  nameWithType: PlayerController.WallrunSpeed
 - uid: Player.PlayerController.WallrunTick
   name: WallrunTick
   href: api/Player.PlayerController.html#Player_PlayerController_WallrunTick
