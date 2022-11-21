@@ -131,7 +131,7 @@ namespace Player {
             _isLeftWall = Physics.Raycast(transform.position, -_orientation.right, out _leftHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
             _isRightWall = Physics.Raycast(transform.position, _orientation.right, out _rightHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
 
-            Debug.Log(_input.MovementDirection);
+            //Debug.Log(Speed);
         }
 
         public void FixedUpdate() {
