@@ -1,8 +1,6 @@
 using FSM;
-using Player.States;
-using UnityEngine;
 
-namespace Player.GroundSubstates {
+namespace Player.States.Ground {
     public class PlayerIdleState : StateBase<PlayerStates> {
         private PlayerController _controller;
 

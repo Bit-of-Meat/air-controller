@@ -1,8 +1,7 @@
 using UnityEngine;
 using FSM;
-using Player.GroundSubstates;
 
-namespace Player.States {
+namespace Player.States.Ground {
     public class PlayerGroundState : StateBase<PlayerStates> {
         private PlayerController _controller;
         private StateMachine<PlayerStates> _stateMachine;
@@ -48,6 +47,9 @@ namespace Player.States {
             
             Vector3 _moveDirection = _controller.Orientation.forward * _controller.Input.MovementDirection.y + _controller.Orientation.right * _controller.Input.MovementDirection.x;
             _controller.RigidBody.AddForce(_moveDirection.normalized * _controller.DesiredMoveSpeed * 10f, ForceMode.Force);
+
+            _controller._animator.SetFloat("X_Velocity", _controller.RigidBody.velocity.x);
+            _controller._animator.SetFloat("Y_Velocity", _controller.RigidBody.velocity.z);
         }
     }
 }

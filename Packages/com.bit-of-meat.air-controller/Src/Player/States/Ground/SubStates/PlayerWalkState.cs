@@ -1,7 +1,6 @@
 using FSM;
-using Player.States;
 
-namespace Player.GroundSubstates {
+namespace Player.States.Ground {
     public class PlayerWalkState : StateBase<PlayerStates> {
         private PlayerController _controller;
 

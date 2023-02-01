@@ -1,9 +1,7 @@
-using System.Collections;
 using UnityEngine;
 using FSM;
-using Player.States;
 
-namespace Player.GroundSubstates {
+namespace Player.States.Ground {
     public class PlayerSlideState : StateBase<PlayerStates> {
         private PlayerController _controller;
 

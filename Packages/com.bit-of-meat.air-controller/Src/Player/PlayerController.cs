@@ -1,8 +1,8 @@
-using System.Collections;
 using UnityEngine;
 using FSM;
 
 using Player.States;
+using Player.States.Ground;
 
 namespace Player {
     public class PlayerController : MonoBehaviour {
@@ -47,7 +47,14 @@ namespace Player {
         
         public RaycastHit _leftHit, _rightHit;
 
+        public Animator _animator;
+
+
+
+
+
         private StateMachine<PlayerStates> _stateMachine;
+
         private bool _isGrounded;
         private bool _isAbove;
         private bool _isLeftWall;
@@ -86,57 +93,83 @@ namespace Player {
         [Header("Easy Wallrun v0.1")]
         [SerializeField] private float _wallrunDrag;
         [SerializeField] private float _wallrunSpeed;
-        [SerializeField] private float _startWallrunForce;        
+        [SerializeField] private float _startWallrunForce;
         public float StartWallrunForce { get => _startWallrunForce; }
-        [SerializeField] private float _wallrunTick;        
+        [SerializeField] private float _wallrunTick;
         public float WallrunTick { get => _wallrunTick; }
         [SerializeField] private Transform _orientation;
 
+        // private Coroutine smooth = null;
+        // private float _test;
 
-        private Coroutine smooth = null;
-
-        private void Start() {
-            RigidBody.freezeRotation = true;
-            ReadyToJump = true;
-            _startYScale = transform.localScale.y;
-
-            _stateMachine = new StateMachine<PlayerStates>();
-            
+        /// <summary>
+        /// Adds player states
+        /// </summary>
+        private void AddStates() {
             _stateMachine.AddState(PlayerStates.Ground, new PlayerGroundState(this));
             _stateMachine.AddState(PlayerStates.Jump, new PlayerJumpState(this));
             _stateMachine.AddState(PlayerStates.Fall, new PlayerFallState(this));
             _stateMachine.AddState(PlayerStates.Wallrun, new PlayerWallrunState(this));
             _stateMachine.AddState(PlayerStates.Walljump, new PlayerWalljumpState(this));
+        }
 
+        /// <summary>
+        /// Adds player transitions
+        /// </summary>
+        private void AddTransitions() {
             _stateMachine.AddTransition(PlayerStates.Ground, PlayerStates.Fall, (_) => !IsGrounded);
-            _stateMachine.AddTransition(PlayerStates.Ground, PlayerStates.Jump, (_) => _input.IsJump && ReadyToJump);
+            _stateMachine.AddTransition(PlayerStates.Ground, PlayerStates.Jump, (_) => Input.IsJump && ReadyToJump);
 
             _stateMachine.AddTransition(PlayerStates.Jump, PlayerStates.Fall, (_) => ReadyToJump);
             
             _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Ground, (_) => IsGrounded);
-            _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Wallrun, (_) => _input.MovementDirection.y > 0 && _input.IsJump && (IsLeftWall || IsRightWall) && Speed >= WalkSpeed);
+            _stateMachine.AddTransition(PlayerStates.Fall, PlayerStates.Wallrun, (_) => Input.MovementDirection.y > 0 && Input.IsJump && (IsLeftWall || IsRightWall) && Speed >= WalkSpeed);
 
-            _stateMachine.AddTransition(PlayerStates.Wallrun, PlayerStates.Walljump, (_) => !_input.IsJump && ReadyToJump);
+            _stateMachine.AddTransition(PlayerStates.Wallrun, PlayerStates.Walljump, (_) => !Input.IsJump && ReadyToJump);
             _stateMachine.AddTransition(PlayerStates.Walljump, PlayerStates.Fall, (_) => ReadyToJump);
             _stateMachine.AddTransition(PlayerStates.Wallrun, PlayerStates.Ground, (_) => IsGrounded);
+        }
+
+        /// <summary>
+        /// Initialize all variables
+        /// </summary>
+        private void Init() {
+            RigidBody.freezeRotation = true;
+            ReadyToJump = true;
+            _startYScale = transform.localScale.y;
+
+            _stateMachine = new StateMachine<PlayerStates>();
+        }
+
+        private void Start() {
+            Init();
+            AddStates();
+            AddTransitions();
 
             _stateMachine.SetStartState(PlayerStates.Ground);
             _stateMachine.Init();
         }
 
-        public void Update() {
+        private void Update() {
             _isGrounded = Physics.BoxCast(transform.position, new Vector3(0.5f, 0.05f, 0.5f), Vector3.down, Quaternion.identity, PlayerHeight * 0.5f, GroundLayerMask);
             _isAbove = Physics.Raycast(transform.position, Vector3.up, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
 
             _isLeftWall = Physics.Raycast(transform.position, -_orientation.right, out _leftHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
             _isRightWall = Physics.Raycast(transform.position, _orientation.right, out _rightHit, PlayerHeight * 0.5f + 0.05f, GroundLayerMask);
-
-            //Debug.Log(Speed);
         }
 
-        public void FixedUpdate() {
+        /// <summary>
+        /// Calculate all physics here
+        /// </summary>
+        private void FixedUpdate() {
             _stateMachine.OnLogic();
+            SpeedLimiter();
+        }
 
+        /// <summary>
+        /// Globally limits the speed of the player  
+        /// </summary>
+        private void SpeedLimiter() {
             Vector3 flatVel = new Vector3(RigidBody.velocity.x, 0f, RigidBody.velocity.z);
 
             if (flatVel.magnitude > DesiredMoveSpeed) {
@@ -144,10 +177,10 @@ namespace Player {
                 RigidBody.velocity = new Vector3(limitedVel.x, RigidBody.velocity.y, limitedVel.z);
             }
         }
-        
-        void OnDrawGizmos() {
-            Gizmos.color = Color.black;
-            Gizmos.DrawCube(transform.position + Vector3.down * (PlayerHeight * 0.5f), new Vector3(0.5f, 0.05f, 0.5f));
-        }
+
+        // void OnDrawGizmos() {
+        //     Gizmos.color = Color.black;
+        //     Gizmos.DrawCube(transform.position + Vector3.down * (PlayerHeight * 0.5f), new Vector3(0.5f, 0.05f, 0.5f));
+        // }
     }
 }
